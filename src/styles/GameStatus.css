@@ -1,0 +1,41 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-100vh);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.game-status {
+    align-self: center;
+    justify-self: center;
+    animation: fadeIn ease-out 2s forwards;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-status h2 {
+    font-size: 1.5rem;
+    color: var(--rich-black);
+    padding-bottom: 1rem;
+}
+
+.game-status button {
+    font-size: 1.2rem;
+    background-color: var(--teal);
+    color: var(--celeste);
+    box-shadow: 0px 0px 10px 0px var(--rich-black);
+    border-radius: 10px;
+}
+
+.game-status button:hover,
+.game-status button:active {
+    filter: brightness(0.9);
+    transform: scale(1.1);
+}

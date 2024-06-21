@@ -1,0 +1,35 @@
+:root {
+  --celeste: #BCF8EC;
+  --rich-black: #001011;
+  --rose-quartz: #ABA9C3;
+  --teal: #177E89;
+  --english-violet: #694D75;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: var(--celeste);
+}
+
+#root {
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

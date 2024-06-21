@@ -1,0 +1,17 @@
+footer {
+    height: 10%;
+    background-color: var(--rich-black);
+    color: var(--teal);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--english-violet);
+}
+
+footer a:hover {
+    color: var(--english-violet);
+    filter: brightness(0.8);
+}
