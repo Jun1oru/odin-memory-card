@@ -1,6 +1,4 @@
-import { config } from './config';
-
-const ApiKey = import.meta.env.VITE_API_KEY || config.API_KEY;
+const ApiKey = import.meta.env.VITE_API_KEY;
 
 export default async function fetchGif() {
   try {
