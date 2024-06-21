@@ -16,8 +16,16 @@ export default async function fetchGif() {
       return '';
     }
     const gifs = data.data;
-    console.log(gifs);
-    return gifs;
+    const list = [];
+    gifs.map((gif) => {
+      list.push({
+        id: gif.id,
+        name: gif.title,
+        url: gif.images.original.url,
+        clicked: false,
+      });
+    });
+    return list;
   } catch (error) {
     console.error('Error: ', error);
   }
