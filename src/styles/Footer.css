@@ -4,6 +4,9 @@ footer {
     color: var(--teal);
     text-align: center;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer a {
