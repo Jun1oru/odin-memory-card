@@ -1,15 +1,16 @@
 header {
     height: 25%;
+    justify-self: center;
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
     text-align: center;
+    padding: 1rem 2rem;
 }
 
 header h1 {
     font-size: 2.5rem;
-    padding: 1rem;
     align-self: center;
     justify-self: center;
 }
@@ -20,4 +21,23 @@ header p {
     font-size: 1.2rem;
     font-weight: 500;
     font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header h1 {
+        grid-column: span 2;
+    }
+
+    header p:first-of-type {
+        justify-self: flex-end;
+    }
+    header p:last-of-type {
+        justify-self: flex-start;
+        padding: 0 1rem;
+    }
 }

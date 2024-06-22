@@ -8,3 +8,15 @@ main {
     grid-template-rows: repeat(auto-fit, minmax(10rem, 1fr));
     gap: 1rem;
 }
+
+@media screen and (min-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main {
+        grid-template-columns: repeat(3, minmax(10rem, 1fr));
+    }
+}

@@ -1,6 +1,7 @@
 .card {
     max-width: 20rem;
     justify-self: center;
+    align-self: center;
     
     display: flex;
     flex-direction: column;
@@ -15,11 +16,33 @@
     height: 12rem;
 }
 
-p {
+.card p {
     width: 12rem;
     font-weight: bold;
     color: var(--teal);
     overflow: hidden;
     word-wrap: break-word;
     white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+    .cardImg {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .card p {
+        width: 15rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cardImg {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .card p {
+        width: 17rem;
+    }
 }
